@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Homepage extends Component {
+class Contactpage extends Component {
   render(){
     return(
       <div>
@@ -13,4 +13,4 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage;
+export default Contactpage;
