@@ -4,7 +4,6 @@ class Homepage extends Component {
   render(){
     return(
       <div>
-      <h1>Fake news</h1>
       <h1>CONSULTECH ENGINEERS</h1>
 <h1>Corporate Training Services</h1>
 	<h1>Contact Us :    ceo@consultechengineers.in		  training@consultechengineers.in </h1>
