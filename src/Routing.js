@@ -40,6 +40,7 @@ class Routing extends Component{
         }}>Training Suite</Nav.Link>
         <Nav.Link style={{color:"white"}} onClick={() => {
           this.props.history.push('/talent');
+          
           document.getElementById('toggleNavBar').click();
         }}>Talent pool</Nav.Link>
         <Nav.Link style={{color:"white"}} onClick={() => {
