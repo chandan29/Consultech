@@ -27,27 +27,27 @@ class Routing extends Component{
       <Navbar fixed="top" expand="lg" style={{width:"100%", background:"black", height:"10%"}}>
   <Container>
     <Navbar.Brand style={{color:"white"}}><b>Consultech Engineers</b></Navbar.Brand>
-    <Navbar.Toggle id="toggleNavBar" aria-controls="basic-navbar-nav" />
+    <Navbar.Toggle style={{background:"white"}} id="toggleNavBar" aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link style={{color:"white"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
           this.props.history.push('/');
           document.getElementById('toggleNavBar').click();
         }}>Home</Nav.Link>
-        <Nav.Link style={{color:"white"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
           this.props.history.push('/training');
           document.getElementById('toggleNavBar').click();
         }}>Training Suite</Nav.Link>
-        <Nav.Link style={{color:"white"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
           this.props.history.push('/talent');
-          
+
           document.getElementById('toggleNavBar').click();
         }}>Talent pool</Nav.Link>
-        <Nav.Link style={{color:"white"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
           this.props.history.push('/testimonials');
           document.getElementById('toggleNavBar').click();
         }}>Testimonials</Nav.Link>
-        <Nav.Link style={{color:"white"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
           this.props.history.push('/caseStudies');
           document.getElementById('toggleNavBar').click();
         }}>Case Studies</Nav.Link>
