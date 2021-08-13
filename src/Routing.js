@@ -5,6 +5,7 @@ import Talent from './Talent';
 import Testimonials from './Testimonials';
 import Trainings from './Trainings';
 import CaseStudies from './CaseStudies';
+import {Navbar,Nav,Container,NavDropdown} from "react-bootstrap";
 class Routing extends Component{
 
   constructor(props){
@@ -23,30 +24,36 @@ class Routing extends Component{
   render(){
     return(
       <div style={{"background":"black"}}>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-          <div className="container">
-              <a className="navbar-brand">Consultech Engineers</a>
-              <div className="collapse navbar-collapse" id="navbarResponsive">
-                  <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                      <li className="nav-item"><a className="nav-link" onClick={() => {
-                        this.props.history.push('/');
-                      }}>Home</a></li>
-                      <li className="nav-item"><a className="nav-link" onClick={() => {
-                        this.props.history.push('/training');
-                      }}>Training Suite</a></li>
-                      <li className="nav-item"><a className="nav-link" onClick={() => {
-                        this.props.history.push('/talent');
-                      }}>Talent pool</a></li>
-                      <li className="nav-item"><a className="nav-link" onClick={() => {
-                        this.props.history.push('/testimonials');
-                      }}>Testimonials</a></li>
-                      <li className="nav-item"><a className="nav-link" onClick={() => {
-                        this.props.history.push('/caseStudies');
-                      }}>Case Studies</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+      <Navbar fixed="top" expand="lg" style={{width:"100%", background:"black", height:"10%"}}>
+  <Container>
+    <Navbar.Brand style={{color:"white"}}><b>Consultech Engineers</b></Navbar.Brand>
+    <Navbar.Toggle id="toggleNavBar" aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link style={{color:"white"}} onClick={() => {
+          this.props.history.push('/');
+          document.getElementById('toggleNavBar').click();
+        }}>Home</Nav.Link>
+        <Nav.Link style={{color:"white"}} onClick={() => {
+          this.props.history.push('/training');
+          document.getElementById('toggleNavBar').click();
+        }}>Training Suite</Nav.Link>
+        <Nav.Link style={{color:"white"}} onClick={() => {
+          this.props.history.push('/talent');
+          document.getElementById('toggleNavBar').click();
+        }}>Talent pool</Nav.Link>
+        <Nav.Link style={{color:"white"}} onClick={() => {
+          this.props.history.push('/testimonials');
+          document.getElementById('toggleNavBar').click();
+        }}>Testimonials</Nav.Link>
+        <Nav.Link style={{color:"white"}} onClick={() => {
+          this.props.history.push('/caseStudies');
+          document.getElementById('toggleNavBar').click();
+        }}>Case Studies</Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
         <Route exact path="/contact" render={() => (
                   <div style={{"background":"black"}}>
                   <Contactpage/>
@@ -73,18 +80,14 @@ class Routing extends Component{
                   </div>
         )}/>
         <Route exact path="/" render={() => (
-            <div style={{"background":"black"}}>
-            <header className="masthead">
-                    <div className="masthead-heading">Welcome To Consultech!</div>
-                    <div className="masthead-subheading">Your single window for diverse Training Requirements</div>
+            <div style={{background:"black", height:"80%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
                     <div><img src="assets/img/consultechIntroImage.png" style={{"height":"30%","width":"60%"}}/></div><br/>
                     <a className="btn btn-primary btn-xl text-uppercase" onClick={() => {
                       this.props.history.push('/contact');
                     }}>Contact Us</a>
-            </header>
             </div>
         )}/>
-        <footer className="footer py-4">
+        <footer className="footer py-4" style={{height:"10%"}}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-4 text-lg-start">Copyright &copy; Consultech Engineers Pvt. Ltd 2021</div>
