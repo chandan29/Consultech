@@ -5,14 +5,14 @@ class Contactpage extends Component {
     return(
       <div>
         <header>
-      <h3>CONSULTECH ENGINEERS</h3>
-<h4>Corporate Training Services</h4>
+      <h3 style={{color:"yellow"}}>CONSULTECH ENGINEERS</h3>
+<h6>Corporate Training Services</h6>
 <br/>
-	<h4>Contact Us : </h4>   <h2 style={{color:"blue"}}>ceo@consultechengineers.in </h2>	  <h2 style={{color:"blue"}}>training@consultechengineers.in </h2>
+	<h5>Contact Us : </h5>   <h4 style={{color:"blue"}}>ceo@consultechengineers.in </h4>	  <h4 style={{color:"blue"}}>training@consultechengineers.in </h4>
   <br/>
-	<h4>Quick Response Number:</h4>  <h2 style={{color:"blue"}}>+91 9096545201 (Mobile & WA) </h2>  <h2 style={{color:"blue"}}>+91 9881717344</h2>
+	<h5>Quick Response Number:</h5>  <h4 style={{color:"blue"}}>+91 9096545201 (Mobile & WA) </h4>  <h4 style={{color:"blue"}}>+91 9881717344</h4>
   <br/>
-  <h1 style={{"margin":"10% 10% 10% 10%", color:"red"}}>Site under construction. Please email or message for enquiries</h1>
+  <h2 style={{"margin":"10% 10% 10% 10%", color:"red"}}>Site under construction. Please email or message for enquiries</h2>
   </header></div>
     );
   }
