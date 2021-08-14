@@ -6,6 +6,7 @@ import Testimonials from './Testimonials';
 import Trainings from './Trainings';
 import CaseStudies from './CaseStudies';
 import {Navbar,Nav,Container,NavDropdown} from "react-bootstrap";
+import Affiliations from './Affiliations';
 class Routing extends Component{
 
   constructor(props){
@@ -55,37 +56,38 @@ class Routing extends Component{
     </Navbar.Collapse>
   </Container>
 </Navbar>
-        <Route exact path="/contact" render={() => (
-                  <div style={{"background":"black"}}>
-                  <Contactpage/>
-                  </div>
-        )}/>
         <Route exact path="/training" render={() => (
-                  <div style={{"background":"black"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
                   <Trainings/>
                   </div>
         )}/>
         <Route exact path="/talent" render={() => (
-                  <div style={{"background":"black"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
                   <Talent/>
                   </div>
         )}/>
         <Route exact path="/testimonials" render={() => (
-                  <div style={{"background":"black"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
                   <Testimonials/>
                   </div>
         )}/>
         <Route exact path="/caseStudies" render={() => (
-                  <div style={{"background":"black"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
                   <CaseStudies/>
                   </div>
         )}/>
+        <Route exact path="/affiliations" render={() => (
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
+                  <Affiliations/>
+                  </div>
+        )}/>
         <Route exact path="/" render={() => (
-            <div style={{background:"black", height:"80%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
-                    <div><img src="assets/img/consultechIntroImage.png" style={{"height":"30%","width":"60%"}}/></div><br/>
-                    <a className="btn btn-primary btn-xl text-uppercase" onClick={() => {
-                      this.props.history.push('/contact');
-                    }}>Contact Us</a>
+            <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
+                    {/*<div><img src="assets/img/consultechIntroImage.png" style={{"height":"30%","width":"60%"}}/></div><br/>*/}
+                    <Affiliations/>
+                    <div style={{color:"white"}}>
+                    <Contactpage/>
+                    </div>
             </div>
         )}/>
         <footer className="footer py-4" style={{height:"10%"}}>
