@@ -52,6 +52,10 @@ class Routing extends Component{
           this.props.history.push('/caseStudies');
           document.getElementById('toggleNavBar').click();
         }}>Case Studies</Nav.Link>
+        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
+          this.props.history.push('/affiliations');
+          document.getElementById('toggleNavBar').click();
+        }}>Affiliations</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
@@ -62,7 +66,7 @@ class Routing extends Component{
                   </div>
         )}/>
         <Route exact path="/talent" render={() => (
-                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
+                  <div style={{background:"black", height:"40%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
                   <Talent/>
                   </div>
         )}/>
@@ -84,13 +88,13 @@ class Routing extends Component{
         <Route exact path="/" render={() => (
             <div style={{background:"black", height:"70%", width:"100%", paddingTop:"10%",paddingBottom:"10%"}}>
                     {/*<div><img src="assets/img/consultechIntroImage.png" style={{"height":"30%","width":"60%"}}/></div><br/>*/}
-                    <Affiliations/>
                     <div style={{color:"white"}}>
                     <Contactpage/>
                     </div>
+                    
             </div>
         )}/>
-        <footer className="footer py-4" style={{height:"10%"}}>
+        <footer className="footer py-4" style={{height:"10%", color:"white"}}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-4 text-lg-start">Copyright &copy; Consultech Engineers Pvt. Ltd 2021</div>

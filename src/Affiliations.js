@@ -9,9 +9,9 @@ class Affiliations extends Component {
     return(
       <div>
           <h2 style={{color:"white"}}>Affiliations</h2>
-          <div style={{display:"flex", flexWrap:"wrap", background: "white", overflow: "hidden", justifyContent: "space-evenly"}}>
+          <div style={{display:"flex", flexWrap:"wrap", background: "lightgrey", overflow: "hidden", justifyContent: "space-evenly"}}>
           {arr.map((image)=>{
-              return <img src={"assets/img/"+image+""} width={"200px"} height={"150px"} style={{padding:"10px 10px 10px 10px", margin:"10px 10px 10px 10px", border: "1px solid black"}} />
+              return <img src={"assets/img/"+image+""} width={"200px"} height={"150px"} style={{padding:"10px 10px 10px 10px", margin:"10px 10px 10px 10px", border: "1px solid black", background:"white"}} />
           })}
           </div>
       </div>
