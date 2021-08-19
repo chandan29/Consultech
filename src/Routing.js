@@ -38,7 +38,7 @@ class Routing extends Component{
         <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
           this.props.history.push('/training');
           document.getElementById('toggleNavBar').click();
-        }}>Training Suite</Nav.Link>
+        }}>zzz</Nav.Link>
         <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
           this.props.history.push('/talent');
 
@@ -91,7 +91,7 @@ class Routing extends Component{
                     <div style={{color:"white"}}>
                     <Contactpage/>
                     </div>
-                    
+
             </div>
         )}/>
         <footer className="footer py-4" style={{height:"10%", color:"white"}}>
