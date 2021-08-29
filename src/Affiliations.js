@@ -7,7 +7,7 @@ class Affiliations extends Component {
         arr.push('con'+i+'.png');
     }
     return(
-      <div>
+      <div style={{paddingTop:"5%"}}>
           <h2 style={{color:"white"}}>Affiliations</h2>
           <div style={{display:"flex", flexWrap:"wrap", background: "lightgrey", overflow: "hidden", justifyContent: "space-evenly"}}>
           {arr.map((image)=>{
