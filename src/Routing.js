@@ -30,7 +30,7 @@ class Routing extends Component{
       <Navbar fixed="top" expand="lg" style={{width:"100%", height:"10%", background:"black"}}>
   <Container>
     <Navbar.Brand style={{color:"white"}}>
-      <img src="assets/img/logo.jpeg" width="75px" height="75px"/>
+      <img src="assets/img/logo.png" width="75px" height="75px"/>
       <b>Consultech Engineers</b></Navbar.Brand>
     <Navbar.Toggle style={{background:"white"}} id="toggleNavBar" aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
