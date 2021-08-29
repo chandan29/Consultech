@@ -12,7 +12,7 @@ class Contactpage extends Component {
   <br/>
 	<h5>Quick Response Number:</h5>  <h4 style={{color:"blue"}}>+91 9096545201 (Mobile & WA) </h4>  <h4 style={{color:"blue"}}>+91 9881717344</h4>
   <br/>
-  <h2 style={{"margin":"10% 10% 10% 10%", color:"red"}}>Site under construction. Please email or message for enquiries</h2>
+  {/*<h2 style={{"margin":"10% 10% 10% 10%", color:"red"}}>Site under construction. Please email or message for enquiries</h2>*/}
   </header></div>
     );
   }

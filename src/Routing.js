@@ -64,34 +64,37 @@ class Routing extends Component{
     </Navbar.Collapse>
   </Container>
 </Navbar>
+  <div style={{paddingTop:"8%"}}>
+	<h6 style={{color:"white"}}>Contact Us :  <p style={{color:"blue"}}>training@consultechengineers.in , +91 9096545201 (Mobile & WA) </p></h6>
+  </div>
         <Route exact path="/training" render={() => (
-                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"5%", paddingBottom:"8%"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"1%", paddingBottom:"1%"}}>
                   <Trainings/>
                   </div>
         )}/>
         <Route exact path="/talent" render={() => (
-                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"5%", paddingBottom:"8%"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"1%", paddingBottom:"1%"}}>
                   <Talent/>
                   </div>
         )}/>
         <Route exact path="/testimonials" render={() => (
-                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"5%", paddingBottom:"8%"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"1%", paddingBottom:"1%"}}>
                   <Testimonials/>
                   </div>
         )}/>
         <Route exact path="/caseStudies" render={() => (
-                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"5%", paddingBottom:"8%"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"1%", paddingBottom:"1%"}}>
                   <CaseStudies/>
                   </div>
         )}/>
         <Route exact path="/affiliations" render={() => (
-                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"5%", paddingBottom:"8%"}}>
+                  <div style={{background:"black", height:"70%", width:"100%", paddingTop:"1%", paddingBottom:"1%"}}>
                   <Affiliations/>
                   </div>
         )}/>
         <Route exact path="/" render={() => (
-            <div style={{background:"black",paddingTop:"5%", height:"100%"}}>
-                    <div className="row" style={{color:"white", width:"100%", height:"100%", paddingTop:"5%", paddingBottom:"5%"}}>
+            <div style={{background:"black", height:"100%"}}>
+                    <div className="row" style={{color:"white", width:"100%", height:"100%", paddingBottom:"2%", paddingTop:"1%"}}>
                       <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
                       <p>Affiliations and associations</p>
                       <Carousel autoPlay={"true"} infiniteLoop={"true"}>
