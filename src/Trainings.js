@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 class Trainings extends Component {
 
@@ -74,10 +76,103 @@ class Trainings extends Component {
     </div>
   ));
     return(
-      <div style={{color:"blue", display:"flex", flexWrap:"wrap", justifyContent: "center"}}>
+      <div style={{color:"white", width:"100%", height:"40%"}}>
+      <div className="row" style={{color:"white", width:"100%", height:"40%", paddingBottom:"2%", paddingTop:"1%"}}>
+                      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <h6>Trainings</h6><br/>
+                      <Carousel autoPlay={"true"} infiniteLoop={"true"} showArrows={"false"} axis={"horizontal"} showStatus={"false"} showIndicators={"false"} showThumbs={"false"} >
+                <div>
+                    <img src="assets/img/trainings/t1.png" />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t2.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t3.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t4.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t5.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t6.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t7.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t8.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t9.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t10.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t11.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t12.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t13.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t14.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t15.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t16.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t17.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t18.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t19.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t20.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t21.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t22.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t23.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t24.png"  />
+                </div>
+                <div>
+                    <img src="assets/img/trainings/t25.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t26.png"  />
+                </div>
+                <div>
+                  <img src="assets/img/trainings/t27.png"  />
+                </div>
+            </Carousel>
+                      </div>
+                      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <img src="assets/img/trainings/trainingsMain.png" width="100%" />
+                      </div>
+        </div>
+        <div style={{color:"blue", display:"flex", flexWrap:"wrap", height:"100%", justifyContent: "center"}}>
         {arr.map((item)=>{
           return item;
         })}
+      </div>
       </div>
     );
   }
