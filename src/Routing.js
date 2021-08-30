@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Route, withRouter} from 'react-router-dom';
-import Contactpage from './Contactpage';
 import Talent from './Talent';
 import Testimonials from './Testimonials';
 import Trainings from './Trainings';
@@ -29,34 +28,34 @@ class Routing extends Component{
       <div style={{"background":"black", height:"100%"}}>
       <Navbar fixed="top" expand="lg" style={{width:"100%", height:"10%", background:"black"}}>
   <Container>
-    <Navbar.Brand style={{color:"white"}}>
-      <img src="assets/img/logo.png" width="75px" height="75px"/>
-      <b>Consultech Engineers</b></Navbar.Brand>
+    <Navbar.Brand style={{color:"white", width:"40%"}}>
+      <img src="assets/img/logo.png" width="30%" height="75px"/>
+      <b style={{width:"40%", paddingLeft:"5%"}}>Consultech Engineers</b></Navbar.Brand>
     <Navbar.Toggle style={{background:"white"}} id="toggleNavBar" aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} className="nav-links" onClick={() => {
           this.props.history.push('/');
           document.getElementById('toggleNavBar').click();
         }}>Home</Nav.Link>
-        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} className="nav-links" onClick={() => {
           this.props.history.push('/training');
           document.getElementById('toggleNavBar').click();
         }}>Training Suite</Nav.Link>
-        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} className="nav-links" onClick={() => {
           this.props.history.push('/talent');
 
           document.getElementById('toggleNavBar').click();
         }}>Talent pool</Nav.Link>
-        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} className="nav-links" onClick={() => {
           this.props.history.push('/testimonials');
           document.getElementById('toggleNavBar').click();
         }}>Testimonials</Nav.Link>
-        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} className="nav-links" onClick={() => {
           this.props.history.push('/caseStudies');
           document.getElementById('toggleNavBar').click();
         }}>Case Studies</Nav.Link>
-        <Nav.Link style={{color:"white", background:"black"}} onClick={() => {
+        <Nav.Link style={{color:"white", background:"black"}} className="nav-links" onClick={() => {
           this.props.history.push('/affiliations');
           document.getElementById('toggleNavBar').click();
         }}>Affiliations</Nav.Link>
@@ -65,7 +64,7 @@ class Routing extends Component{
   </Container>
 </Navbar>
   <div style={{paddingTop:"8%"}}>
-	<h6 style={{color:"white"}}>Contact Us :  <p style={{color:"blue"}}>training@consultechengineers.in , +91 9096545201 (Mobile & WA) </p></h6>
+	<h5 style={{color:"white"}}>Contact Us  <p style={{color:"blue"}}>training@consultechengineers.in , +91 9096545201 (Mobile & WA) </p></h5>
   </div>
         <Route exact path="/training" render={() => (
                   <div style={{background:"black", height:"70%", width:"100%", paddingTop:"1%", paddingBottom:"1%"}}>
@@ -96,7 +95,7 @@ class Routing extends Component{
             <div style={{background:"black", height:"100%"}}>
                     <div className="row" style={{color:"white", width:"100%", height:"100%", paddingBottom:"2%", paddingTop:"1%"}}>
                       <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <p>Affiliations and associations</p>
+                      <h6>Affiliations and associations</h6>
                       <Carousel autoPlay={"true"} infiniteLoop={"true"}>
                 <div>
                     <img src="assets/img/con1.png" />
