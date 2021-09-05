@@ -26,11 +26,11 @@ class Routing extends Component{
   render(){
     return(
       <div style={{"background":"black", height:"100%"}}>
-      <Navbar fixed="top" expand="lg" style={{width:"100%", height:"10%", background:"black"}}>
+      <Navbar fixed="top" expand="lg" style={{width:"100%", height:"16%", background:"black"}}>
   <Container>
     <Navbar.Brand style={{color:"white", width:"40%"}}>
-      <img src="assets/img/logo2.png" width="30%" height="75px"/>
-      <b style={{width:"40%", paddingLeft:"5%"}}>Consultech Engineers</b></Navbar.Brand>
+      <img src="assets/img/Logo3.png" width="25%" height="75px"/>
+      <b style={{width:"40%", paddingLeft:"5%"}}>CONSULTECH ENGINEERS</b></Navbar.Brand>
     <Navbar.Toggle style={{background:"white"}} id="toggleNavBar" aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
@@ -64,7 +64,7 @@ class Routing extends Component{
   </Container>
 </Navbar>
   <div style={{paddingTop:"8%"}}>
-	<h5 style={{color:"white"}}>Contact Us  <p style={{color:"blue"}}>training@consultechengineers.in , +91 9096545201 (Mobile & WA) </p></h5>
+	<h5 style={{color:"white"}}>Contact Us  <p style={{color:"white"}}>training@consultechengineers.in , +91 9096545201 (Mobile & WA) </p></h5>
   </div>
         <Route exact path="/training" render={() => (
                   <div style={{background:"black", height:"70%", width:"100%", paddingTop:"1%", paddingBottom:"1%"}}>
